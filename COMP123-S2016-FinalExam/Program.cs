@@ -8,6 +8,9 @@ namespace COMP123_M2020_FinalExam
 {
     public static class Program
     {
+        public static SplashForm splashform;
+        public static GenerateNameForm generateNameForm;
+        public static AbilityGeneratorForm AbilityGenerator;
         public static Character character = new Character();
 
         /// <summary>
@@ -16,10 +19,15 @@ namespace COMP123_M2020_FinalExam
         [STAThread]
         static void Main()
         {
-
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AbilityGeneratorForm());
+            splashform = new SplashForm();
+            generateNameForm = new GenerateNameForm();
+            AbilityGenerator = new AbilityGeneratorForm();
+            Application.Run(splashform);
+
+           
         }
     }
 }
