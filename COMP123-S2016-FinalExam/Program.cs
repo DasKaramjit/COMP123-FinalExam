@@ -6,6 +6,14 @@ using System.Windows.Forms;
 
 namespace COMP123_M2020_FinalExam
 {
+
+    /* Das Karamjit
+     301108505
+     COMP 123 Final
+     Submitted on : 21-08-2020
+     Last Edited 20-08-2020
+     Program Description :  Using the Project Template Provided, complete the project that 
+     generates the first few pages of a RolePlaying Game Character. */
     public static class Program
     {
         public static SplashForm splashform;
@@ -22,6 +30,7 @@ namespace COMP123_M2020_FinalExam
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // instantiate splashform,generateNameForm ,AbilityGenerator objects
             splashform = new SplashForm();
             generateNameForm = new GenerateNameForm();
             AbilityGenerator = new AbilityGeneratorForm();

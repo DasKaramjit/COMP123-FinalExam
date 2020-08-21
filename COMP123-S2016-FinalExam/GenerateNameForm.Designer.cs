@@ -29,13 +29,16 @@ namespace COMP123_M2020_FinalExam
         
         private void GenerateNames()
         {
-            
-                Random fname = new Random();
+            /*Random names generated from the first name list box*/
+
+            Random fname = new Random();
                 int i = FirstNameListBox.Items.Count;
                 int chosenitem = fname.Next(0, i);
                 FirstNameListBox.SelectedIndex = chosenitem;
             
                 textBox1.Text=FirstNameListBox.SelectedItem.ToString();
+
+            /*Random names generated from the last name list box*/
 
             Random lname = new Random();
             int j = FirstNameListBox.Items.Count;
@@ -293,6 +296,7 @@ namespace COMP123_M2020_FinalExam
             this.NextButton.TabIndex = 7;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // GenerateNameForm
             // 
