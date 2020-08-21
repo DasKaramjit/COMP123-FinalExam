@@ -16,5 +16,12 @@ namespace COMP123_M2020_FinalExam
         {
             InitializeComponent();
         }
+
+        private void GenerateButton_Click(object sender, EventArgs e)
+        {
+            GenerateNames();
+
+
+        }
     }
 }

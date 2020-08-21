@@ -26,8 +26,9 @@ namespace COMP123_M2020_FinalExam
             generateNameForm = new GenerateNameForm();
             AbilityGenerator = new AbilityGeneratorForm();
             Application.Run(splashform);
+     
 
-           
+
         }
     }
 }
