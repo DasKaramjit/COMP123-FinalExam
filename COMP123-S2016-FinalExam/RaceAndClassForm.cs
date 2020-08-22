@@ -15,7 +15,7 @@ namespace COMP123_M2020_FinalExam
     {
         public AbilityGeneratorForm previousForm;
         private string _selectedRace;
-
+        Character character = Program.character;
 
         public RaceAndClassForm()
         {
@@ -24,7 +24,7 @@ namespace COMP123_M2020_FinalExam
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            Character character = Program.character;
+            
 
             character.Race = this._selectedRace;
 
@@ -44,6 +44,7 @@ namespace COMP123_M2020_FinalExam
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            character.Race = this._selectedRace;
             FinalForm finalForm = new FinalForm();
             finalForm.previousForm = this;
 
